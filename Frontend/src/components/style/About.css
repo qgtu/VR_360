@@ -1,0 +1,96 @@
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                var(--primary-color);
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 4rem;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.feature {
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.about-technology {
+    background: #f5f5f5;
+    padding: 3rem;
+    border-radius: 8px;
+    margin-bottom: 4rem;
+}
+
+.about-technology h2 {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.about-technology ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-technology li {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.about-technology li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.about-cta {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.about-cta h2 {
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background: var(--primary-dark);
+}

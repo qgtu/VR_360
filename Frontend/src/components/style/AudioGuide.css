@@ -1,0 +1,92 @@
+.audio-guide {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    z-index: 1000;
+    color: white;
+}
+
+.audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.play-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    background: var(--primary-dark);
+    transform: scale(1.1);
+}
+
+.play-button.playing {
+    background: #f44336;
+}
+
+.audio-info {
+    flex: 1;
+}
+
+.audio-title {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    opacity: 0.9;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 2px;
+    transition: width 0.1s linear;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* Animation for play button */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.play-button.playing {
+    animation: pulse 2s infinite;
+}

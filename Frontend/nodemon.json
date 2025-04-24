@@ -1,0 +1,19 @@
+{
+  "watch": ["src/**/*"],
+  "ignore": [
+    "src/**/*.test.js",
+    "src/**/*.spec.js",
+    "node_modules",
+    "build",
+    "dist"
+  ],
+  "ext": "js,jsx,ts,tsx,json,css,scss,html",
+  "delay": "500",
+  "verbose": true,
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "events": {
+    "restart": "echo \"[nodemon] App restarted due to changes\""
+  }
+}

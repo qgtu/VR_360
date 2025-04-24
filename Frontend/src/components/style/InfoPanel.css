@@ -1,0 +1,172 @@
+.info-panel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+}
+
+.info-content {
+    padding: 20px;
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    margin: 0 8px;
+}
+
+.info-panel h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.location-details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.location-icon {
+    font-size: 18px;
+}
+
+.description-section {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.description-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.audio-guide-info {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.audio-guide-info h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.hotspot-guide {
+    margin: 20px 0;
+}
+
+.hotspot-types {
+    list-style: none;
+    padding: 0;
+}
+
+.hotspot-types li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.green { background: #00ff00; }
+.dot.blue { background: #0000ff; }
+.dot.orange { background: #ff9900; }
+.dot.red { background: #ff0000; }
+
+.related-destinations {
+    margin-top: 30px;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.related-card {
+    text-decoration: none;
+    color: inherit;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.related-card:hover {
+    transform: translateY(-3px);
+}
+
+.related-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.related-info {
+    padding: 10px;
+}
+
+.related-info h4 {
+    margin: 0 0 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.related-info span {
+    font-size: 12px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .info-panel {
+        width: 100%;
+        height: 50vh;
+        bottom: 0;
+        top: auto;
+    }
+    
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+}
